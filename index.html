@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11131a">
+  <meta name="description" content="A local-first diagnostic tool for Project Zomboid and Viewpoint logs.">
+  <title>PZ Diagnostic</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mod-detection.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="PZ Diagnostic home">
+        <span class="brand-mark">PZ</span>
+        <span><strong>PZ Diagnostic</strong><small>PROJECT ZOMBOID LOG ANALYZER</small></span>
+      </a>
+      <span class="privacy"><span class="privacy-dot"></span> 100% LOCAL · NO API REQUIRED</span>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><span class="eyebrow-line"></span> DIAGNOSTICS TOOLKIT</div>
+        <h1>Find out what went <span>wrong.</span></h1>
+        <p class="hero-copy">Analyze your Project Zomboid console log locally. Your file never leaves your device.</p>
+      </section>
+
+      <section class="upload-card" id="upload-card">
+        <div class="upload-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M4 16.5v2A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5v-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h2>Upload your console.txt</h2>
+        <p>Drag and drop your log file here, or browse your computer.</p>
+        <label class="primary-button" for="file-input">Choose log file</label>
+        <input id="file-input" type="file" accept=".txt,.log,text/plain">
+        <div class="file-hint">TXT or LOG files · Processed locally · No uploads</div>
+        <div class="selected-file" id="selected-file" hidden></div>
+      </section>
+
+      <section class="results" id="results" hidden aria-live="polite">
+        <div class="results-heading">
+          <div><div class="eyebrow">MOD CHECK</div><h2 id="result-title">Console.txt results</h2></div>
+          <button class="secondary-button" id="new-analysis" type="button">Analyze another log</button>
+        </div>
+        <section class="tracked-mods" aria-live="polite">
+          <div class="tracked-mods-heading">
+            <h3>Viewpoint mod detection</h3>
+            <p id="tracked-mods-summary">Checking 11 mods</p>
+          </div>
+          <ul id="tracked-mods-list" class="tracked-mods-list"></ul>
+          <p class="tracked-mods-note">“Not found” means the mod identifier was not present in this console.txt. It does not confirm whether the mod is installed or enabled.</p>
+        </section>
+      </section>
+
+    </main>
+  </div>
+  <script src="knowledge/java.js"></script>
+  <script src="knowledge/lua.js"></script>
+  <script src="knowledge/mods.js"></script>
+  <script src="knowledge/maps.js"></script>
+  <script src="knowledge/performance.js"></script>
+  <script src="knowledge/compatibility.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

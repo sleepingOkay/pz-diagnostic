@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">PZ Diagnostic preview</title>
+<desc id="desc">Dark interface preview of PZ Diagnostic showing local console log analysis and detected Viewpoint mods.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#171629"/><stop offset=".55" stop-color="#0d0f14"/><stop offset="1" stop-color="#10131b"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1c2030"/><stop offset="1" stop-color="#141720"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c6b7ff"/><stop offset="1" stop-color="#8669e8"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<ellipse cx="600" cy="20" rx="440" ry="170" fill="#8c6bea" opacity=".12" filter="url(#shadow)"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+  <rect x="48" y="32" width="1104" height="611" rx="22" fill="#0b0d12" stroke="#343044"/>
+  <path d="M70 33h1060a22 22 0 0 1 22 22v46H48V55a22 22 0 0 1 22-22Z" fill="#141720"/>
+  <rect x="75" y="54" width="42" height="42" rx="12" fill="url(#accent)"/>
+  <text x="96" y="81" font-size="18" font-weight="800" fill="#171322" text-anchor="middle">PZ</text>
+  <text x="130" y="69" font-size="16" font-weight="750" fill="#f1f2f7">PZ Diagnostic</text>
+  <text x="130" y="86" font-size="8" letter-spacing="1.7" fill="#9299aa">PROJECT ZOMBOID LOG ANALYZER</text>
+  <circle cx="929" cy="74" r="4" fill="#79d6ad"/>
+  <text x="943" y="78" font-size="10" letter-spacing="1.1" fill="#a8b1c2">100% LOCAL · NO API REQUIRED</text>
+  <text x="600" y="153" text-anchor="middle" font-size="10" letter-spacing="2.3" fill="#b7a2ff">DIAGNOSTICS TOOLKIT</text>
+  <text x="600" y="201" text-anchor="middle" font-size="39" font-weight="800" letter-spacing="-1.7" fill="#f1f2f7">Find out what went <tspan fill="#b7a2ff">wrong.</tspan></text>
+  <text x="600" y="229" text-anchor="middle" font-size="13" fill="#9299aa">Analyze your Project Zomboid console log locally. Your file never leaves your device.</text>
+  <rect x="235" y="257" width="730" height="115" rx="15" fill="url(#panel)" stroke="#51466f"/>
+  <rect x="568" y="275" width="64" height="54" rx="14" fill="#a88df51a"/>
+  <path d="M600 315v-25m0 0-9 9m9-9 9 9M584 319v4a3 3 0 0 0 3 3h26a3 3 0 0 0 3-3v-4" fill="none" stroke="#b7a2ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="346" text-anchor="middle" font-size="15" font-weight="700" fill="#f1f2f7">Upload your console.txt</text>
+  <text x="600" y="362" text-anchor="middle" font-size="9" fill="#9299aa">Drag and drop your log file here, or browse your computer.</text>
+  <rect x="75" y="397" width="1050" height="216" rx="14" fill="#11141c" stroke="#282e3b"/>
+  <text x="101" y="429" font-size="9" letter-spacing="1.8" fill="#b7a2ff">MOD CHECK</text>
+  <text x="101" y="458" font-size="21" font-weight="750" fill="#f1f2f7">console.txt <tspan fill="#9299aa" font-size="15" font-weight="500">| Viewpoint version:</tspan> <tspan fill="#b7a2ff" font-size="17">0.1.7-rc3</tspan></text>
+  <rect x="101" y="477" width="998" height="1" fill="#282e3b"/>
+  <text x="101" y="505" font-size="14" font-weight="700" fill="#f1f2f7">Viewpoint mod detection</text>
+  <text x="1099" y="505" text-anchor="end" font-size="10" fill="#9299aa">3 of 11 detected</text>
+  <g font-size="11">
+    <rect x="101" y="520" width="310" height="31" rx="7" fill="#191d28" stroke="#343044"/><text x="113" y="540" fill="#e6e3f2">Surface Fix</text><text x="397" y="540" text-anchor="end" fill="#79d6ad" font-size="9" font-weight="700">DETECTED</text>
+    <rect x="445" y="520" width="310" height="31" rx="7" fill="#191d28" stroke="#343044"/><text x="457" y="540" fill="#e6e3f2">KK's Trees</text><text x="741" y="540" text-anchor="end" fill="#79d6ad" font-size="9" font-weight="700">DETECTED</text>
+    <rect x="789" y="520" width="310" height="31" rx="7" fill="#191d28" stroke="#343044"/><text x="801" y="540" fill="#e6e3f2">Light Fix</text><text x="1085" y="540" text-anchor="end" fill="#9299aa" font-size="9" font-weight="700">NOT FOUND</text>
+    <rect x="101" y="561" width="310" height="31" rx="7" fill="#191d28" stroke="#343044"/><text x="113" y="581" fill="#e6e3f2">Barricade Fix</text><text x="397" y="581" text-anchor="end" fill="#9299aa" font-size="9" font-weight="700">NOT FOUND</text>
+    <rect x="445" y="561" width="310" height="31" rx="7" fill="#191d28" stroke="#343044"/><text x="457" y="581" fill="#e6e3f2">Viewpoint Tile Fix</text><text x="741" y="581" text-anchor="end" fill="#79d6ad" font-size="9" font-weight="700">DETECTED</text>
+  </g>
+</g>
+</svg>
